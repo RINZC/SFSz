@@ -22,9 +22,9 @@ namespace SFSz
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btn_close_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btn_minimize_Click(object sender, EventArgs e)
