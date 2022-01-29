@@ -30,9 +30,9 @@ namespace SFSz
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btn_close = new System.Windows.Forms.Button();
-            this.btn_minimize = new System.Windows.Forms.Button();
             this.logo = new System.Windows.Forms.Label();
+            this.btn_minimize = new System.Windows.Forms.Button();
+            this.btn_close = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -45,6 +45,30 @@ namespace SFSz
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(800, 53);
             this.panel1.TabIndex = 0;
+            // 
+            // logo
+            // 
+            this.logo.AutoSize = true;
+            this.logo.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logo.Location = new System.Drawing.Point(3, 8);
+            this.logo.Name = "logo";
+            this.logo.Size = new System.Drawing.Size(81, 32);
+            this.logo.TabIndex = 2;
+            this.logo.Text = "SFSz";
+            // 
+            // btn_minimize
+            // 
+            this.btn_minimize.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btn_minimize.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_minimize.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_minimize.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_minimize.Location = new System.Drawing.Point(722, 12);
+            this.btn_minimize.Name = "btn_minimize";
+            this.btn_minimize.Size = new System.Drawing.Size(30, 29);
+            this.btn_minimize.TabIndex = 1;
+            this.btn_minimize.Text = "－";
+            this.btn_minimize.UseVisualStyleBackColor = true;
+            this.btn_minimize.Click += new System.EventHandler(this.btn_minimize_Click);
             // 
             // btn_close
             // 
@@ -59,29 +83,6 @@ namespace SFSz
             this.btn_close.Text = "X";
             this.btn_close.UseVisualStyleBackColor = true;
             this.btn_close.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // btn_minimize
-            // 
-            this.btn_minimize.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btn_minimize.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_minimize.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_minimize.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_minimize.Location = new System.Drawing.Point(722, 12);
-            this.btn_minimize.Name = "btn_minimize";
-            this.btn_minimize.Size = new System.Drawing.Size(30, 29);
-            this.btn_minimize.TabIndex = 1;
-            this.btn_minimize.Text = "－";
-            this.btn_minimize.UseVisualStyleBackColor = true;
-            // 
-            // logo
-            // 
-            this.logo.AutoSize = true;
-            this.logo.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.logo.Location = new System.Drawing.Point(3, 8);
-            this.logo.Name = "logo";
-            this.logo.Size = new System.Drawing.Size(81, 32);
-            this.logo.TabIndex = 2;
-            this.logo.Text = "SFSz";
             // 
             // Form1
             // 

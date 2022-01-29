@@ -26,5 +26,10 @@ namespace SFSz
         {
 
         }
+
+        private void btn_minimize_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
