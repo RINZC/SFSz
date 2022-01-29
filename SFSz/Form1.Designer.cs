@@ -43,8 +43,11 @@ namespace SFSz
             this.panel1.Controls.Add(this.btn_close);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 53);
+            this.panel1.Size = new System.Drawing.Size(800, 50);
             this.panel1.TabIndex = 0;
+            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ToolStrip1_MouseDown);
+            this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.ToolStrip1_MouseMove);
+            this.panel1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.ToolStrip1_MouseUp);
             // 
             // logo
             // 
@@ -82,7 +85,7 @@ namespace SFSz
             this.btn_close.TabIndex = 0;
             this.btn_close.Text = "X";
             this.btn_close.UseVisualStyleBackColor = true;
-            this.btn_close.Click += new System.EventHandler(this.button1_Click);
+            this.btn_close.Click += new System.EventHandler(this.btn_close_Click);
             // 
             // Form1
             // 
